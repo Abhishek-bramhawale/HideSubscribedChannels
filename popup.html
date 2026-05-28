@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Hide Subscribed</h2>
+
+    <label class="switch">
+      <input type="checkbox" id="toggle">
+      <span class="slider"></span>
+    </label>
+
+    <p>Hide subscribed channel videos on homepage</p>
+
+    <h3>Blocked Channels</h3>
+    <ul id="blockedChannels" class="blocked-list">
+      <li class="empty">No blocked channels yet</li>
+    </ul>
+
+    <h3>Debug Info</h3>
+    <pre id="debugInfo" class="debug-box">Waiting for data...</pre>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

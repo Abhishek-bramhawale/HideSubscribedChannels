@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Subscribed Channels",
+  "version": "1.0",
+  "description": "Hide videos from subscribed channels on YouTube homepage only.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
